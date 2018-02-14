@@ -34,19 +34,11 @@ public class Tune
         return ret;
     }
 
-    /*
-    public String toString()
+    public void setElements(int x, String title, String altTitle, String notation)
     {
-        String ret = "";
-        for(int row = 0 ; row < rows ; row ++)
-        {
-            for(int col = 0 ; col < cols ; col ++)
-            {
-                ret += elements[row][col] + "\t";
-            }
-            ret += "\n";
-        }
-        return ret;
+        this.x = x;
+        this.title = title;
+        this.altTitle = altTitle;
+        this.notation = notation;
     }
-    */
 }

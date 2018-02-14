@@ -9,7 +9,7 @@ public class TuneBook
 
     public static void main(String[] args)
     {
-    	String fileName = "hnj0.abc";
+    	String fileName = "ie/dit/hnj0.abc";
     	TuneBook tb = new TuneBook(fileName);
     	System.out.println(tb);
     }
@@ -20,10 +20,14 @@ public class TuneBook
 		try {
 		    inputStream = new BufferedReader(new FileReader(fileName));
 		    String l;
-		    Tune newTune = new Tune()
+		    //Tune newTune = new Tune;
 		    while ((l = inputStream.readLine()) != null) 
 		    {
-		        System.out.println(l);
+		        //System.out.println(l);
+		        if(l.indexOf('X') == 1);
+		        {
+		        	System.out.println(l);
+		        }
 		    }
 		}
 		catch (IOException e)
