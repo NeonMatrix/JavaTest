@@ -20,14 +20,26 @@ public class TuneBook
 		try {
 		    inputStream = new BufferedReader(new FileReader(fileName));
 		    String l;
+			String x;
+			String title;
+			String altTitle;
+			String notation;
 		    //Tune newTune = new Tune;
 		    while ((l = inputStream.readLine()) != null) 
 		    {
-		        //System.out.println(l);
-		        if(l.indexOf('X') == 1);
-		        {
-		        	System.out.println(l);
-		        }
+				if(l.indexOf('X') == 0)
+				{
+					x = l.substring(2);
+					System.out.println(x);
+				
+				}
+				if(l.indexOf('T') == 0 && l.indexOf(':') == 1)
+				{
+					title = l.substring(2);
+					System.out.println(title);
+				}
+
+				//System.out.println(l);
 		    }
 		}
 		catch (IOException e)
